@@ -1,2 +1,2 @@
 # metapsi.ionic
-C#-typed Ionic for Metapsi
+C#-typed [Ionic](https://ionicframework.com) development for Metapsi
