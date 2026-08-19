@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="metapsi.ionic/Metapsi.Ionic.csproj" />
+  <Project Path="metapsi.ionic.playground/Metapsi.Ionic.Playground.csproj" />
+</Solution>

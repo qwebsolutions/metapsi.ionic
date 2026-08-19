@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="generated\ionic.target" />
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net47</TargetFrameworks>
+		<LangVersion>11.0</LangVersion>
+		<IsPackable>true</IsPackable>
+		<Description>Metapsi.Ionic $(IonicVersion)</Description>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Metapsi.Html" Version="0.53.0" />
+	</ItemGroup>
+</Project>

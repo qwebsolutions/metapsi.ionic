@@ -1,0 +1,37 @@
+{
+  "name": "@qwebsolutions/metapsi-ionic-generator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Generates the Metapsi.Ionic C# API from @ionic/core type declarations and docs.json.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "generate": "node dist/main.js ../metapsi.ionic",
+    "start": "npm run build && npm run generate"
+  },
+  "dependencies": {
+    "@ionic/core": "^8.8.18",
+    "@qwebsolutions/metapsi-generator": "^0.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "^5.9.3"
+  }
+}
